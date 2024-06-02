@@ -9,8 +9,7 @@
     android:gravity="bottom|center_horizontal"
     android:padding="16dp"
     android:background="@color/hijaupalingmuda"
-    tools:context=".MenuUtamaAcitvity">
-
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,7 +17,7 @@
         android:layout_height="201dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        app:srcCompat="@drawable/logo_apoplus" />
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"
@@ -41,7 +40,8 @@
         android:background="@color/orange"
         android:textOn="Daftar Obat"
         android:textOff="Daftar Obat"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
     <ToggleButton
         android:id="@+id/btn_Toggle2"
@@ -52,7 +52,9 @@
         android:textOn="Pesan"
         android:textOff="Pesan"
         android:textColor="@color/white"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="135dp"
         tools:layout_editor_absoluteY="563dp" />
+
 
 </LinearLayout>

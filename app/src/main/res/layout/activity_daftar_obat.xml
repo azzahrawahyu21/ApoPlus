@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -9,7 +8,19 @@
     android:gravity="top|center_horizontal"
     android:padding="16dp"
     android:background="@color/hijaupalingmuda"
-    tools:context=".MenuUtamaAcitvity">
+    tools:context=".DaftarObatActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:contentDescription="@string/back_button_description"
+        android:layout_margin="16dp"
+        android:background="@null"
+        android:onClick="onBackButtonClicked"
+        android:layout_gravity="start|top"/>
+
 
     <TextView
         android:id="@+id/textView"
@@ -36,7 +47,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginEnd="16dp"
-            app:srcCompat="@drawable/dexteem" />
+            android:src="@drawable/dexteem"
+            android:contentDescription="@string/dexteem_desc" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -78,7 +90,6 @@
         </LinearLayout>
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,7 +101,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginEnd="16dp"
-            app:srcCompat="@drawable/postan" />
+            android:src="@drawable/postan"
+            android:contentDescription="@string/postan_desc" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -132,8 +144,6 @@
         </LinearLayout>
     </LinearLayout>
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -145,7 +155,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginEnd="16dp"
-            app:srcCompat="@drawable/ventolin" />
+            android:src="@drawable/ventolin"
+            android:contentDescription="@string/ventolin_desc" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -191,7 +202,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginEnd="16dp"
-            app:srcCompat="@drawable/iliadin" />
+            android:src="@drawable/iliadin"
+            android:contentDescription="@string/iliadin_desc" />
 
         <LinearLayout
             android:layout_width="0dp"

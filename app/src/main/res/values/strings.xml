@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Daftar Obat</string>
+    <string name="app_name">ApoPlus</string>
+    <string name="back_button_description">Kembali ke Menu Utama</string>
+    <string name="dexteem_desc">Gambar Dexteem Plus</string>
+    <string name="postan_desc">Gambar Ponstan 500mg</string>
+    <string name="ventolin_desc">Gambar Ventolin 2.5mg</string>
+    <string name="iliadin_desc">Gambar Iliadin nasal spray</string>
 </resources>

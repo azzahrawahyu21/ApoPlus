@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:padding="16dp"
+    android:background="@color/hijaupalingmuda"
+    android:context=".PesanActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="Pesan"
+        android:textColor="@color/hijautua"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textViewDexteem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Dexteem plus box 100"
+                        android:textColor="@color/hijautua"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewMinDexteem"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/min"
+                        android:onClick="decrementQuantity"/>
+
+                    <TextView
+                        android:id="@+id/textViewDexteemQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewPlusDexteem"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/plus"
+                        android:onClick="incrementQuantity"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hargaDexteem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Rp.27.000"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textViewPonstan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Ponstan 500mg box 100"
+                        android:textColor="@color/hijautua"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewMinPonstan"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/min"
+                        android:onClick="decrementQuantity"/>
+
+                    <TextView
+                        android:id="@+id/textViewPonstanQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewPlusPonstan"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/plus"
+                        android:onClick="incrementQuantity"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hargaPonstan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Rp.286.503"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+            <!-- Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textViewClinovir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Clinovir Cream 5gr"
+                        android:textColor="@color/hijautua"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewMinClinovir"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/min"
+                        android:onClick="decrementQuantity"/>
+
+                    <TextView
+                        android:id="@+id/textViewClinovirQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewPlusClinovir"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/plus"
+                        android:onClick="incrementQuantity"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hargaClinovir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Rp.37.574"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+            <!-- Item 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textViewIlliadin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Illiadin Nasal Spray"
+                        android:textColor="@color/hijautua"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewMinIlliadin"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/min"
+                        android:onClick="decrementQuantity"/>
+
+                    <TextView
+                        android:id="@+id/textViewIlliadinQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewPlusIlliadin"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/plus"
+                        android:onClick="incrementQuantity"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hargaIlliadin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Rp.79.000"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Garis -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <!-- Jumlah Pesanan -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Pesananan : "
+        android:textColor="@color/hijautua"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button Batal dan Lanjut -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/id_cancelButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_orange"
+            android:text="Batal"
+            android:textColor="@color/orange"
+            android:layout_marginEnd="16dp"
+            android:onClick="onCancelClicked"/>
+
+        <Button
+            android:id="@+id/id_nextButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:text="Lanjut"
+            android:textColor="#FDFCFC"
+            android:onClick="onNextClicked"/>
+    </LinearLayout>
+
+</LinearLayout>
