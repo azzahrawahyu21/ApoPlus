@@ -1,101 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/hijaupalingmuda"
-    tools:context=".HasilActivity">
+    android:padding="16dp">
 
-    <ListView
-        android:id="@+id/listView"
+    <TextView
+        android:id="@+id/judul_halaman_text_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Pesanan"
-        android:textColor="@color/hijautua"
-        android:textSize="20dp"
+        android:text="Hasil Pemesanan"
+        android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="85dp" />
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/detail_pemesanan_linear_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dexteem plus box 100"
-        android:textColor="@color/hijautua"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="151dp" />
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ponstan 500mg box 100"
-        android:textColor="@color/hijautua"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="230dp" />
+        <TextView
+            android:id="@+id/nama_obat_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Nama Obat:" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clinovir Cream 5gr"
-        android:textColor="@color/hijautua"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="309dp" />
+        <TextView
+            android:id="@+id/nama_obat_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Illiadin Nasal Spray"
-        android:textColor="@color/hijautua"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="382dp" />
+        <TextView
+            android:id="@+id/harga_obat_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Harga Obat:" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="___________________________________________________"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="442dp" />
+        <TextView
+            android:id="@+id/harga_obat_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/jumlah_pesanan_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Jumlah Pesanan:" />
+
+        <TextView
+            android:id="@+id/jumlah_pesanan_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_bayar_linear_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Bayar :"
-        android:textColor="@color/hijautua"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="488dp" />
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/total_bayar_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Total Bayar:" />
+
+        <TextView
+            android:id="@+id/total_bayar_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/id.selesaiButton"
-        android:layout_width="149dp"
-        android:layout_height="49dp"
-        android:background="@color/orange"
+        android:id="@+id/konfirmasi_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Selesai"
-        android:textColor="#FFFEFE"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="637dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@color/orange"
+        android:textColor="#FDFCFC"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

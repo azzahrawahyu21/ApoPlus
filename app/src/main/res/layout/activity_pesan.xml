@@ -6,9 +6,7 @@
     android:orientation="vertical"
     android:gravity="top|center_horizontal"
     android:padding="16dp"
-    android:background="@color/hijaupalingmuda"
-    android:context=".PesanActivity">
-
+    android:background="@color/hijaupalingmuda">
 
     <TextView
         android:id="@+id/textView"
@@ -82,7 +80,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/hargaDexteem"
+                    android:id="@+id/tvhargaDexteem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -138,7 +136,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/hargaPonstan"
+                    android:id="@+id/tvhargaPonstan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -193,7 +191,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/hargaClinovir"
+                    android:id="@+id/tvhargaClinovir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -248,7 +246,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/hargaIlliadin"
+                    android:id="@+id/tvhargaIlliadin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
