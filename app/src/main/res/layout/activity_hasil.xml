@@ -14,58 +14,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="center_horizontal"
-        android:layout_marginTop="16dp" />
-
-    <LinearLayout
-        android:id="@+id/detail_pemesanan_linear_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp">
-
-        <TextView
-            android:id="@+id/nama_obat_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="Nama Obat:" />
-
-        <TextView
-            android:id="@+id/nama_obat_value_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/harga_obat_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="Harga Obat:" />
-
-        <TextView
-            android:id="@+id/harga_obat_value_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/jumlah_pesanan_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="Jumlah Pesanan:" />
-
-        <TextView
-            android:id="@+id/jumlah_pesanan_value_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-    </LinearLayout>
+        android:layout_marginTop="16dp"
+        android:textColor="@color/hijautua" />
 
     <LinearLayout
         android:id="@+id/total_bayar_linear_layout"
@@ -79,25 +29,37 @@
             android:id="@+id/total_bayar_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="150dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:text="Total Bayar:" />
+            android:textColor="@color/hijautua"
+            android:text="Total Bayar : " />
 
         <TextView
             android:id="@+id/total_bayar_value_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:layout_marginTop="100dp"
             android:textStyle="bold" />
+
     </LinearLayout>
+
+    <!-- Garis -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/black" />
 
     <Button
         android:id="@+id/konfirmasi_button"
-        android:layout_width="wrap_content"
+        android:layout_width="198dp"
         android:layout_height="wrap_content"
-        android:text="Selesai"
-        android:background="@color/orange"
-        android:textColor="#FDFCFC"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="40dp"
+        android:background="@color/orange"
+        android:text="Selesai"
+        android:textColor="#FDFCFC" />
 </LinearLayout>

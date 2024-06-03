@@ -24,8 +24,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="289dp"
-        android:layout_weight="1"
+        android:layout_height="371dp"
         android:paddingBottom="5dp">
 
         <LinearLayout
@@ -60,8 +59,8 @@
                         android:id="@+id/imageViewMinDexteem"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/min"
-                        android:onClick="decrementQuantity"/>
+                        android:onClick="decrementQuantity"
+                        android:src="@drawable/min" />
 
                     <TextView
                         android:id="@+id/textViewDexteemQty"
@@ -75,12 +74,12 @@
                         android:id="@+id/imageViewPlusDexteem"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/plus"
-                        android:onClick="incrementQuantity"/>
+                        android:onClick="incrementQuantity"
+                        android:src="@drawable/plus" />
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvhargaDexteem"
+                    android:id="@+id/harga_obat_value_text_view_dexteem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -116,8 +115,8 @@
                         android:id="@+id/imageViewMinPonstan"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/min"
-                        android:onClick="decrementQuantity"/>
+                        android:onClick="decrementQuantity"
+                        android:src="@drawable/min" />
 
                     <TextView
                         android:id="@+id/textViewPonstanQty"
@@ -131,12 +130,12 @@
                         android:id="@+id/imageViewPlusPonstan"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/plus"
-                        android:onClick="incrementQuantity"/>
+                        android:onClick="incrementQuantity"
+                        android:src="@drawable/plus" />
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvhargaPonstan"
+                    android:id="@+id/harga_obat_value_text_view_ponstan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -171,8 +170,8 @@
                         android:id="@+id/imageViewMinClinovir"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/min"
-                        android:onClick="decrementQuantity"/>
+                        android:onClick="decrementQuantity"
+                        android:src="@drawable/min" />
 
                     <TextView
                         android:id="@+id/textViewClinovirQty"
@@ -186,12 +185,12 @@
                         android:id="@+id/imageViewPlusClinovir"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/plus"
-                        android:onClick="incrementQuantity"/>
+                        android:onClick="incrementQuantity"
+                        android:src="@drawable/plus" />
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvhargaClinovir"
+                    android:id="@+id/harga_obat_value_text_view_clinovir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -226,8 +225,8 @@
                         android:id="@+id/imageViewMinIlliadin"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/min"
-                        android:onClick="decrementQuantity"/>
+                        android:onClick="decrementQuantity"
+                        android:src="@drawable/min" />
 
                     <TextView
                         android:id="@+id/textViewIlliadinQty"
@@ -241,12 +240,12 @@
                         android:id="@+id/imageViewPlusIlliadin"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/plus"
-                        android:onClick="incrementQuantity"/>
+                        android:onClick="incrementQuantity"
+                        android:src="@drawable/plus" />
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvhargaIlliadin"
+                    android:id="@+id/harga_obat_value_text_view_illiadin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -279,29 +278,31 @@
     <!-- Button Batal dan Lanjut -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_height="112dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:layout_marginTop="16dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/id_cancelButton"
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_border_orange"
-            android:text="Batal"
-            android:textColor="@color/orange"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="16dp"
-            android:onClick="onCancelClicked"/>
+            android:background="@drawable/button_border_orange"
+            android:onClick="onCancelClicked"
+            android:text="Batal"
+            android:textColor="@color/orange" />
 
         <Button
             android:id="@+id/id_nextButton"
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:background="@color/orange"
+            android:onClick="onNextClicked"
             android:text="Lanjut"
-            android:textColor="#FDFCFC"
-            android:onClick="onNextClicked"/>
+            android:textColor="#FDFCFC" />
     </LinearLayout>
 
 </LinearLayout>
